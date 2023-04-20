@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/verify.css" /> -->
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -24,13 +25,17 @@
   <body>
     <!-- Add your site or application content here -->
     <header>
+      <!--First flex container. It will center the content-wrapper-->
       <div class="content-wrapper">
+        <!--Second flex container. This will center the contents in the wrapper-->
         <figure>
           <a href="#"><img src="" alt="" />unplugged</a>
         </figure>
         <div class="header-divider"></div>
         <nav>
+          <!--Another flexbox. It will center the nav as a whole-->
           <ul>
+            <!--Another flexbox. It will center/arrange the list-->
             <li>
               <a href="faq/index.html" target="_blank" rel="noopener">FAQ</a>
             </li>
@@ -46,13 +51,16 @@
 
     <main>
       <section class="hero-area">
+        <!--Another flexbox. THis will center the whole hero-area-->
         <div class="content-wrapper">
+          <!-- Another flexbox. This will center the contents in the hero-area appropriately-->
           <h1>Retreat from the desk, return refreshed.</h1>
         </div>
       </section>
 
       <aside>
         <div class="content-wrapper">
+          <!--Another flexbox here. This will center the whole of the aside section-->
           <div class="form-description">
             <h3>Want to join the next retreat?</h3>
             <p>
@@ -62,67 +70,71 @@
           </div>
           <div class="form">
             <h3>Find out more</h3>
-          
-              <input type="text" name="name" value="email address" />
+            <div class="form-input">
+              <input type="text" name="name" value="name@email.com" />
               <input type="button" value="Download Itinerary" />
-          
+            </div>
           </div>
         </div>
-
       </aside>
 
       <section class="features">
+        <!--Another flexbox. This will center the features portion of the page as a whole-->
         <div class="content-wrapper">
+          <!--Another flexbox. This one will position feature items centrally  in the content-wrapper-->
           <h2>
             Have the work week you always dreamed of - without the bad wifi.
           </h2>
           <div class="features-items">
-            <article>
-            <p class="fontawesome-icon"></p>
-            <p class="features-item-description">
-              Located in a peaceful bungalow outside of Lake Geneva, Winsconsin.
-            </p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <p class="features-item-description">
-              12 private rooms with ensuite bathrooms, 2 group meeting rooms,
-              and 4 breakout rooms.
-            </p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <p class="features-item-description">
-              Private chef team providing on demand meals - just like your team
-              kitchen.
-            </p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <p class="features-item-description">
-              5 outdoor obstacle courses, including private beach 1/2 mile from
-              bungalow.
-            </p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <p class="features-item-description">
-              Retreat facilitator to manage your day to day activities so you
-              all get a chance to reset.
-            </p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <p class="features-item-description">
-              Dedicated computer room for times you must wifi.
-            </p>
-          </article>
+            <div class="individual-feature">
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Located in a peaceful bungalow outside of Lake Geneva,
+                Winsconsin.
+              </p>
+            </div>
+            <div class="individual-feature">
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                12 private rooms with ensuite bathrooms, 2 group meeting rooms,
+                and 4 breakout rooms.
+              </p>
+            </div>
+            <div class="individual-feature">
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Private chef team providing on demand meals - just like your
+                team kitchen.
+              </p>
+            </div>
+            <div class="individual-feature">
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                5 outdoor obstacle courses, including private beach 1/2 mile
+                from bungalow.
+              </p>
+            </div>
+            <div class="individual-feature">
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Retreat facilitator to manage your day to day activities so you
+                all get a chance to reset.
+              </p>
+            </div>
+            <div class="individual-feature" S>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Dedicated computer room for times you must wifi.
+              </p>
+            </div>
           </div>
-          
         </div>
       </section>
+
       <section class="reviews">
+        <!--Another flexbox. Reviews section is centered-->
         <div class="content-wrapper">
+          <!--Another flexbox. This one centers the content of the review section-->
           <article>
             <h2>Be a better team in 5 days, like this one.</h2>
             <img src="" alt="" />
@@ -145,18 +157,21 @@
     <!-- main wrapper-->
     <footer>
       <div class="content-wrapper">
+        <!--Another flexbox. This one will center the footer-->
         <div class="footer-content">
           <div class="contact-info">
+            <!--Another flexbox. This one will center all of the contact info.-->
             <div>
-              <div>
+              <div class="contact">
                 <h4>Contact</h4>
                 <address class="contact">
                   <p>555-555-5555<br /><a href="#">hello@unplugged.com</a></p>
                 </address>
               </div>
-              <div class="Social">
+              <div class="social">
                 <h4>Social</h4>
                 <div class="social-icons">
+                  <!--Another flexbox. This one will center/arrange the social icons-->
                   <p>
                     <a
                       href="https://www.facebook.com/yoursite"
@@ -186,10 +201,11 @@
           </div>
         </div>
         <!-- footer content ends-->
+        <div class="copyright">
+          <p>Copyright 2023 | unplugged</p>
+        </div>
       </div>
       <!-- footer content-wrapper ends-->
-
-      <div class="copyright"><p>Copyright 2023 | unplugged</p></div>
     </footer>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
