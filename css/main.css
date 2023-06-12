@@ -296,8 +296,8 @@ FAQ Page
 .faq {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  /* align-items: center; */
+  /* flex-flow: row wrap; */
 }
 
 .faq .content-wrapper {
@@ -495,18 +495,14 @@ FAQ Page
     align-items: center;
   }
 
-  footer .contact {
-    margin-bottom: 0;
+  footer .contact,
+  footer .social {
+    margin: 0;
   }
 
-  footer .copyright {
-    width: ;
-  }
-
-  .faq-content {
-    flex-basis: 45%;
-  }
-
+  /* footer .copyright {
+    width: 100%;
+  } */
   /* ==========================================================================
    About Page
    ========================================================================== */
@@ -550,6 +546,58 @@ FAQ Page
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+    margin: 0;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 30%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* About Page */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+
+  /* FAQ Page */
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .footer-content {
+    justify-content: space-between;
+  }
 }
 
 /* ==========================================================================
