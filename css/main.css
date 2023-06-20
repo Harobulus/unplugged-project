@@ -130,6 +130,7 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
@@ -168,6 +169,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -241,8 +246,12 @@ footer h4 {
 }
 
 .hero-area {
+  height: 500px;
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat.jpg) #333;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-area h1 {
@@ -298,6 +307,9 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -325,17 +337,8 @@ input[type="button"] {
 .reviews {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
   background-color: #2a423a;
 }
-
-/* .reviews .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-} */
 
 .reviews h2 {
   margin-bottom: 40px;
@@ -500,6 +503,11 @@ FAQ Page
     font-size: 1.5em;
     line-height: 1.25;
   }
+
+  figure {
+    margin: 0;
+    width: 50%;
+  }
   /* Header */
 
   header {
@@ -511,12 +519,16 @@ FAQ Page
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 25%;
   }
 
   header nav ul {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .header-divider {
@@ -524,6 +536,9 @@ FAQ Page
   }
 
   /* Hero Area */
+  .hero-area {
+    height: 600px;
+  }
 
   .hero-area .content-wrapper {
     display: flex;
@@ -577,15 +592,24 @@ FAQ Page
     width: 85%;
   }
 
+  .review figure {
+    width: 48%;
+  }
+
   .reviews article div {
-    width: 50%;
+    width: 49%;
   }
 
   .reviews h3 {
     width: 75%;
     margin: 0;
   }
-
+  /* .reviews article div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+} */
   /* Footer */
 
   footer .content-wrapper {
@@ -689,8 +713,16 @@ FAQ Page
     line-height: 1.333;
   }
 
+  h1 {
+    margin-top: 0.4em;
+  }
+
   header {
     padding: 15px 0;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   .hero-area h1 {
