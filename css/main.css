@@ -228,13 +228,16 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #527158;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 footer .copyright {
@@ -243,6 +246,10 @@ footer .copyright {
 
 footer h4 {
   margin: 20px 0;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 .hero-area {
@@ -334,8 +341,8 @@ input[type="button"] {
 }
 
 .features i {
-	font-size: 3.75em;
-    margin-bottom: 40px;
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 /* Reviews */
 
